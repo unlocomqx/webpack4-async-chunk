@@ -11,6 +11,7 @@ module.exports = {
     path: __dirname + "/dist",
     filename: "[name].js",
     chunkFilename: "[name].js",
+    publicPath: 'https://dev.net/tests/webpack4/dist/'
   },
   module: {
     rules: [
