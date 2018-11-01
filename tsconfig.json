@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "lib": [ "es5", "es2015.promise", "dom" ],
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*",
+        "views/*",
+        "views/ts/tests/mocks/*"
+      ],
+      "@tools/*" : ["views/ts/tools/*"],
+      "@interfaces/*" : ["views/ts/interfaces/*"],
+      "@data/*" : ["views/ts/data/*"],
+      "@helpers/*" : ["views/ts/helpers/*"],
+      "@mixins/*" : ["views/ts/mixins/*"],
+      "@plugins/*" : ["views/ts/plugins/*"],
+      "@mocks/*" : ["views/ts/tests/mocks/*"],
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "moduleResolution": "Node",
+  "types": [
+    "node"
+  ],
+  "typeRoots": [
+    "node_modules/@types"
+  ]
+}
